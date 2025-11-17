@@ -1,7 +1,7 @@
 export default function Footer() {
 	return (
-		<footer>
-			<p>Footer</p>
+		<footer className="bg-dark text-white text-center py-3 mt-auto">
+			<p className="mb-0">Footer</p>
 		</footer>
 	);
 }
