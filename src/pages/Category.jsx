@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { useNavigate } from "react-router";
+import Button from 'react-bootstrap/Button';
 
 export default function Category() {
 	const { category } = useParams();
@@ -12,7 +13,7 @@ export default function Category() {
 	return (
 		<div>
 			<h1>{category}</h1>
-			<button onClick={toHomePage}>Retour à la page d'accueil</button>
+			<Button variant="primary" onClick={toHomePage}>Retour à la page d'accueil</Button>
 		</div>
 	);
 }

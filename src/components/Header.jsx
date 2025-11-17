@@ -11,14 +11,16 @@ export default function Header() {
 		<header>
 			<Navbar expand="lg" className="bg-body-tertiary">
 				<Container>
+					{match ? (
+						<Navbar.Brand>
+							Catégorie : {match.params.category}
+						</Navbar.Brand>
+					) : (
+						<Navbar.Brand>Bienvenue sur le site</Navbar.Brand>
+					)}
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="ms-auto">
-							{match ? (
-								<Navbar.Text className="me-3">
-									Catégorie : {match.params.category}
-								</Navbar.Text>
-							) : null}
 							<Nav.Link as={NavLink} to="/">
 								Accueil
 							</Nav.Link>
