@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
 import Home from "./pages/Home.jsx";
 import Layout from "./components/Layout.jsx";
+import Category from "./pages/Category.jsx";
 
 function App() {
 	return (
