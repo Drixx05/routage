@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import "../styles/Header.css";
+import "../assets/styles/Header.css";
 
 export default function Header() {
 	return (
